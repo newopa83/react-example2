@@ -1,0 +1,20 @@
+{
+    "apps" : [{
+        "name"        : "admin_front",
+        "script"      : "react-scripts start",
+        "exec_mode"      : "cluster",
+        "instances": 2,
+        "env": {
+            "PORT": 3000,
+            "NODE_ENV": "development"
+        },
+        "env_devserver" : {
+          "PORT": 3000,
+          "NODE_ENV": "devserver"
+        },
+        "env_production" : {
+            "PORT": 4000,
+            "NODE_ENV": "production"
+        }
+    }]
+}

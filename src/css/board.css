@@ -1,0 +1,115 @@
+@media only screen and (max-width: 768px) {
+    .board-list {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.board-list table {
+    width: 100%;
+    border: 1px solid #DCDEE4;
+}
+.board-list th, .board-list td {
+    border-bottom: 1px solid #DCDEE4;
+    line-height: 100%;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.board-list thead {
+    background: #F0F4F8;
+}
+.board-list thead th {
+    padding: 10px;
+    color: #36384D;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.board-list tbody {
+    background: #fff;
+}
+.board-list tbody tr:hover, .board-list tbody tr.checked {
+    background-color: #F0F4F8;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-property: background;
+    transition-property: background;
+}
+.board-list tbody tr .td-blank {
+    background-color: #fff;
+    font-weight: bold;
+}
+.board-list tbody td {
+    padding: 7px 10px;
+    color: #6E6E7A;
+    font-size: 1.0rem;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    vertical-align: middle;
+}
+.board-list tbody td.txt {
+    line-height: 1.3;
+    font-weight: bold;
+}
+.board-list tbody td.txt span {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    white-space: normal;
+    overflow: hidden;
+}
+.board-list tbody td.btns * {
+    vertical-align: middle;
+}
+.board-list tbody td.btns *:not(:first-child) {
+    margin-left: 5px;
+}
+.board-list tbody td.va-top {
+    vertical-align: middle;
+}
+.board-list tbody a {
+    display: block;
+    padding: 5px 0;
+    color: #6E6E7A;
+}
+.board-list tbody a:hover {
+    color: #36384D;
+}
+.board-list .ta-left {
+    text-align: left;
+}
+.board-list .ta-right {
+    text-align: right;
+}
+
+.board-list .tbl-xs th, .board-list .tbl-xs td {
+    height: auto;
+    padding: 7px 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #36384D;
+    word-break: break-all;
+}
+
+.tbl-ss th,.tbl-ss td {
+    height: auto;
+    padding: 7px 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #36384D;
+    word-break: break-all;
+}
+.board-list .tbl-xs th {
+    background: rgba(111, 116, 244, 0.1);
+}
